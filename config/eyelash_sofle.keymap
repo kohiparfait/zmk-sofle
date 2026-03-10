@@ -71,7 +71,7 @@
 &kp TILDE   &kp F6           &kp F7          &kp F8           &kp F9           &kp F10            &mmv MOVE_DOWN       &kp PG_UP        &mkp LCLK       &mkp RCLK           &kp LBKT       &kp RBKT       &kp END
 &trans      &trans           &trans          &trans           &trans           &trans             &mmv MOVE_LEFT       &kp PG_DN        &kp UP          &trans              &trans         &kp APOS       &trans
 &trans      &trans           &trans          &trans           &trans           &trans             &mmv MOVE_RIGHT      &kp LEFT         &kp DOWN        &kp RIGHT           &trans         &trans         &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK            &trans           &trans          &trans              &trans         &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK            &mo 3            &trans          &trans              &trans         &trans
             >;
 
             display-name = "SYMBOL";
@@ -82,9 +82,9 @@
             bindings = <
 &soft_off      &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4          &mmv MOVE_UP         &kp KP_N7         &kp KP_N8             &kp KP_N9            &kp KP_DIVIDE       &kp KP_CLEAR      &kp DEL
 &trans         &bt BT_CLR        &bt BT_CLR_ALL  &trans            &trans            &kp C_MUTE            &mmv MOVE_DOWN       &kp KP_N4         &kp KP_N5             &kp KP_N6            &kp KP_MULTIPLY     &kp INSERT        &kp END        
-&trans         &out OUT_USB      &out OUT_BLE    &kp C_BRI_INC     &kp C_PLAY        &kp C_VOL_UP          &mmv MOVE_LEFT       &kp KP_N1         &kp KP_N2             &kp KP_N3            &kp KP_MINUS        &kp HOME          &sys_reset
-&trans         &trans            &trans          &kp C_BRI_DEC     &kp C_PAUSE       &kp C_VOL_DN          &mmv MOVE_RIGHT      &trans            &kp KP_N0             &kp KP_DOT           &kp KP_PLUS         &trans            &bootloader  
-&trans         &rgb_ug RGB_OFF   &rgb_ug RGB_ON  &rgb_ug RGB_EFF   &rgb_ug RGB_EFR   &rgb_ug RGB_SPI       &mkp LCLK            &trans            &rgb_ug RGB_BRI       &rgb_ug RGB_BRD      &trans              &kp KP_ENTER  
+&trans         &out OUT_USB      &out OUT_BLE    &kp C_BRI_INC     &kp C_PLAY        &kp C_VOL_UP          &mmv MOVE_LEFT       &kp KP_N1         &kp KP_N2             &kp KP_N3            &kp KP_MINUS        &kp HOME          &trans      
+&trans         &trans            &trans          &kp C_BRI_DEC     &kp C_PAUSE       &kp C_VOL_DN          &mmv MOVE_RIGHT      &trans            &kp KP_N0             &kp KP_DOT           &kp KP_PLUS         &kp KP_ENTER      &trans      
+&trans         &rgb_ug RGB_OFF   &rgb_ug RGB_ON  &rgb_ug RGB_EFF   &rgb_ug RGB_EFR   &mo 3                 &mkp LCLK            &trans            &rgb_ug RGB_SPI       &rgb_ug RGB_SPD      &rgb_ug RGB_BRI       &rgb_ug RGB_BRD  
             >;
 
             display-name = "SYSTEM";
@@ -96,11 +96,11 @@
 &soft_off      &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4          &mmv MOVE_UP         &kp KP_N7         &kp KP_N8             &kp KP_N9            &kp KP_DIVIDE       &kp KP_CLEAR      &kp DEL
 &trans         &bt BT_CLR        &bt BT_CLR_ALL  &trans            &trans            &kp C_MUTE            &mmv MOVE_DOWN       &kp KP_N4         &kp KP_N5             &kp KP_N6            &kp KP_MULTIPLY     &kp INSERT        &kp END        
 &sys_reset     &out OUT_USB      &out OUT_BLE    &kp C_BRI_INC     &kp C_PLAY        &kp C_VOL_UP          &mmv MOVE_LEFT       &kp KP_N1         &kp KP_N2             &kp KP_N3            &kp KP_MINUS        &kp HOME          &sys_reset
-&bootloader    &trans            &trans          &kp C_BRI_DEC     &kp C_PAUSE       &kp C_VOL_DN          &mmv MOVE_RIGHT      &trans            &kp KP_N0             &kp KP_DOT           &kp KP_PLUS         &trans            &bootloader  
-&trans         &rgb_ug RGB_OFF   &rgb_ug RGB_ON  &rgb_ug RGB_EFF   &rgb_ug RGB_EFR   &rgb_ug RGB_SPI       &mkp LCLK            &trans            &rgb_ug RGB_BRI       &rgb_ug RGB_BRD      &trans              &kp KP_ENTER 
+&bootloader    &trans            &trans          &kp C_BRI_DEC     &kp C_PAUSE       &kp C_VOL_DN          &mmv MOVE_RIGHT      &trans            &kp KP_N0             &kp KP_DOT           &kp KP_PLUS         &kp KP_ENTER      &bootloader  
+&trans         &rgb_ug RGB_OFF   &rgb_ug RGB_ON  &rgb_ug RGB_EFF   &rgb_ug RGB_EFR   &trans                &mkp LCLK            &trans            &rgb_ug RGB_SPI       &rgb_ug RGB_SPD      &rgb_ug RGB_BRI       &rgb_ug RGB_BRD
             >;
 
-            display-name = "layer3";
+            display-name = "RESET";
             sensor-bindings = <&scroll_encoder>;
         };
 
